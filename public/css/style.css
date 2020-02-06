@@ -97,7 +97,7 @@ a:focus{
 /*-- banner --*/
 .center-container {
     padding: 2em 0 48em;
-    background: rgba(0, 0, 0, 0.6);/*//lam mo video*/
+    background: rgba(0, 0, 0, 0);/*//lam mo video*/
     position: relative;
 }
 .w3_agile_header {
