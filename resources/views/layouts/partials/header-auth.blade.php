@@ -52,9 +52,9 @@
 			</div>
 		@else
 	    	<h1 class="text-center page-header">
-	    		<a class="btn btn-success btn-lg" href="{{route('trangchu')}}">HOME</a>
-	    		<a class="btn btn-success btn-lg" href="{{route('business.getRegister')}}">Đăng Ký</a>
-	    		<a class="btn btn-success btn-lg" href="{{route('login')}}">Đăng Nhập</a>
+	    		<a class="btn btn-success btn-lg" href="{{route('trangchu')}}">Home</a>
+	    		<a class="btn btn-success btn-lg" href="{{route('business.getRegister')}}">Sign Up</a>
+	    		<a class="btn btn-success btn-lg" href="{{route('login')}}">Sign In</a>
 	    	</h1>
 	    @endif
 	</div>
