@@ -37,17 +37,16 @@
 			        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 			            <div class="text-center top40">
 			            	
-			                <form action="{{route('postForm1')}}" class="input-box" method="POST"> 
-			                				                <input type="hidden" name="_token" value="{{csrf_token()}}">
-			                				                <input class="input_checkcode" type="text" name="Code" placeholder="Nhập Code để Check!" size="20" id="searchText" required/> 
-			                				                <p><br><hr style="border: 1px solid green;"><br></p>
-			                				              	<button class="btn btn-info btn-lg" id="searchSubmit" type="submit">Kiểm tra</button>
+			                <form action="/postForm1" class="input-box" method="POST"> 
+								{{csrf_field()}}
+				                <input class="input_checkcode" type="text" name="Code" placeholder="Nhập Code để Check!" size="20" id="searchText" required=""> 
+				              	<button class="btn btn-info btn-lg" type="submit">Kiểm tra</button>
 			                </form>
 			            </div>
 			        </div>
 			      </div>
 
-			      
+
       </div>
    </div>
 </div>

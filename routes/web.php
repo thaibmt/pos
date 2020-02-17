@@ -11,19 +11,21 @@
 |
 */
 /*route::get('check','formCOntroller@getForm');*/
-route::post('postForm1','formCOntroller@postForm1')->name('postForm1');
-include_once('install_r.php');
 
-Route::middleware(['IsInstalled'])->group(function () {
-    Route::get('/', function () {
-        return view('welcome');
-    })->name('welcome');
+include_once('install_r.php');
+Route::post('postForm1','formCOntroller@postForm1')->name('postForm1');
 route::get('home',function(){
     return view('pages_food/home');
 })->name('trangchu');
 route::get('check',function(){
     return view('pages_food/check');
 });
+
+Route::middleware(['IsInstalled'])->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('welcome');
+
 
 route::get('admin',function(){
     return view('welcome');

@@ -18,7 +18,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-<link rel="stylesheet" href="{{asset('bootstrap/bootstrap.css')}}">
+<link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.css')}}">
 <!-- nav -->
 <link rel="stylesheet" href="{{asset('css/style2.css')}}">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -42,10 +42,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!-- banner -->
 <!-- //banner -->
-<div id="NoiDung">
+<section id="NoiDung">
 @yield('NoiDung')
-
-</div>
+</section>
 <!--footer-->
 @include('pages_food.footer')
 
@@ -112,7 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- start-smoth-scrolling -->
 <script src="{{asset('js/jqBootstrapValidation.js')}}"></script>
-<script src="{{asset('js/contact_me.js')}}"></script>
+<?php //<script src="{{asset('js/contact_me.js')}}"></script> ?>
 
 
 <!--tabs-->
