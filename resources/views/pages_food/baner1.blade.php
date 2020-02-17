@@ -7,27 +7,6 @@
 									<!-- <span id="show" style="">Vì Một Cuộc Sống Xanh Hơn</span> -->
 								</h1>
 						</div>
-						<!-- <div class="w3_menu"> -->
-							<!-- <div class="agileits_w3layouts_banner_info">
-				
-								<form action="#" method="post"> 
-									<input type="search" name="search" placeholder="Search here..." required="">
-									<input type="submit" value="Search">
-								</form>
-							</div> -->
-							<!-- 	<div class="mobile-nav-button">
-									<div class="mobile-nav-button__line"></div>
-									<div class="mobile-nav-button__line"></div>
-									<div class="mobile-nav-button__line"></div>
-								</div>
-								<nav class="mobile-menu">
-									<ul>
-										@foreach($Menu as $row)
-										<li><a href="{{$row->link}}" class="active" >{{$row->title}}</a></li>
-										@endforeach
-									</ul>
-								</nav>
-						</div> -->
 					
 						<nav>
 					      <input type="checkbox" id="check">
@@ -57,19 +36,18 @@
 			        </div>
 			        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 			            <div class="text-center top40">
-			                <form action="" class="input-box">
-			                <input class="input_checkcode" type="text" name="T1" placeholder="Nhập Code để Check!" size="20" id="searchText" required/> 
-			                <!-- <a href="#" class="btn btn-info btn-lg" id="searchSubmit" onclick="Search();">Kiểm tra</a> -->
-			                <p><br><!-- <hr style="border: 1px solid green;"> --><br></p>
-			              	<button class="btn btn-info btn-lg" id="searchSubmit" onclick="">Kiểm tra </button>
+			            	
+			                <form action="{{route('postForm1')}}" class="input-box" method="POST"> 
+			                				                <input type="hidden" name="_token" value="{{csrf_token()}}">
+			                				                <input class="input_checkcode" type="text" name="Code" placeholder="Nhập Code để Check!" size="20" id="searchText" required/> 
+			                				                <p><br><hr style="border: 1px solid green;"><br></p>
+			                				              	<button class="btn btn-info btn-lg" id="searchSubmit" type="submit">Kiểm tra</button>
 			                </form>
 			            </div>
 			        </div>
 			      </div>
-			
-			<!--banner Slider starts Here-->
-			<!-- <div class="w3_agileits_social_media "> -->
-			<!-- </div> -->
+
+			      
       </div>
    </div>
 </div>

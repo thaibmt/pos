@@ -493,8 +493,9 @@ padding-left: 4px;
 padding-right: 4px;
 padding-top: 0px;
 padding-bottom: 1px;
--webkit-text-fill-color: #ffffff40;
-background: none;
+color: black;
+/* -webkit-text-fill-color: #ffffff40; */
+/* background: none; */
 }
 
 /*	INPUT CHECKCODE TEXT BOX

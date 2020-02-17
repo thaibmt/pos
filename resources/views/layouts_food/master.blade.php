@@ -44,6 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //banner -->
 <div id="NoiDung">
 @yield('NoiDung')
+
 </div>
 <!--footer-->
 @include('pages_food.footer')

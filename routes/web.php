@@ -10,7 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*route::get('check','formCOntroller@getForm');*/
+route::post('postForm1','formCOntroller@postForm1')->name('postForm1');
 include_once('install_r.php');
 
 Route::middleware(['IsInstalled'])->group(function () {
@@ -23,9 +24,11 @@ route::get('home',function(){
 route::get('check',function(){
     return view('pages_food/check');
 });
+
 route::get('admin',function(){
     return view('welcome');
 });
+
     Auth::routes();
 
     Route::get('/business/register', 'BusinessController@getRegister')->name('business.getRegister');
