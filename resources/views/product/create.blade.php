@@ -39,6 +39,8 @@
             </div>
           </div>
         </div>
+        
+          
         <div class="col-sm-4">
           <div class="form-group">
             {!! Form::label('unit_id', __('product.unit') . ':*') !!}
@@ -73,6 +75,86 @@
             {!! Form::label('sku', __('product.sku') . ':') !!} @show_tooltip(__('tooltip.sku'))
             {!! Form::text('sku', null, ['class' => 'form-control',
               'placeholder' => __('product.sku')]); !!}
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <form action="">
+              <label>Lô sản xuất:</label>
+            </form>
+               <form action="">
+                  <input type="" name="" class="form-control" placeholder="Lô sản xuất">
+              </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <form action="">
+              <label>Đơn vị sản xuất:</label>
+            </form>
+               <form action="">
+                  <input type="" name="" class="form-control" placeholder="Đơn vị sản xuất">
+              </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <form action="">
+              <label>Nguyên liệu sản xuất:</label>
+            </form>
+               <form action="">
+                  <input type="" name="" class="form-control" placeholder="Nguyên liệu sản xuất">
+              </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <form action="">
+              <label>Địa điểm sản xuất:</label>
+            </form>
+               <form action="">
+                  <input type="" name="" class="form-control" placeholder="Địa điểm sản xuất">
+              </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <form action="">
+              <label>Quy trình sản xuất:</label>
+            </form>
+               <form action="">
+                  <input type="" name="" class="form-control" placeholder="Quy trình sản xuất">
+              </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <form action="">
+              <label>Quy trình vận chuyển:</label>
+            </form>
+               <form action="">
+                  <input type="" name="" class="form-control" placeholder="Quy trình vận chuyển">
+              </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <form action="">
+              <label>Quy trình lưu kho:</label>
+            </form>
+               <form action="">
+                  <input type="" name="" class="form-control" placeholder="Quy trình lưu kho">
+              </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <form action="">
+              <label>Đơn vị vận chuyển:</label>
+            </form>
+               <form action="">
+                  <input type="" name="" class="form-control" placeholder="Đơn vị vận chuyển">
+              </form>
           </div>
         </div>
         <div class="clearfix"></div>
@@ -220,6 +302,8 @@
         </div>
       -->
         <!--custom fields-->
+
+
         <div class="clearfix"></div>
         @include('layouts.partials.module_form_part')
       </div>

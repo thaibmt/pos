@@ -1,9 +1,4 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php header('Set-Cookie: cross-site-cookie=name; SameSite=None; Secure'); ?>	
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -14,7 +9,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Fishing Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
+		function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
 <!-- bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
@@ -40,6 +36,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head>
 <body>
+
 <!-- banner -->
 <!-- //banner -->
 <section id="NoiDung">
@@ -108,7 +105,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 						});
 			</script>
-
 <!-- start-smoth-scrolling -->
 <script src="{{asset('js/jqBootstrapValidation.js')}}"></script>
 <?php //<script src="{{asset('js/contact_me.js')}}"></script> ?>
